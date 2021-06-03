@@ -38,6 +38,7 @@ public class Directorcontroller {
 	@GetMapping("{name}")
 	private Director getDirectorbyname(@PathVariable String name)
 	{
+		System.out.println("hii");
 		return service.getDirectorb(name);
 		}
 	@GetMapping("{fname}")
